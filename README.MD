@@ -1,5 +1,13 @@
 para correr el programa solo necesitamos entrar a cp y ejecutar el archivo final.py
 
+![Antes](https://i.imgur.com/mArZzn8.png)
+
+<img src="https://i.imgur.com/a9fkPcR.png" alt="Despues" width="500px">
+
+# Diagrama De Flujo
+
+<img src="https://i.imgur.com/oj9zJ0H.png" alt="Despues" width="1000px">
+
 # Bucket Automation Project
 
 This is a Robotic Process Automation project with Python. The main goal, keep the download workspace free and organised automatically using a stack data structure and a stack sorting algotithm.
