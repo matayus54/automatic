@@ -1,3 +1,5 @@
+para correr el programa solo necesitamos entrar a cp y ejecutar el archivo final.py
+
 # Bucket Automation Project
 
 This is a Robotic Process Automation project with Python. The main goal, keep the download workspace free and organised automatically using a stack data structure and a stack sorting algotithm.
@@ -99,21 +101,21 @@ Please make sure to update tests as appropriate.
 
 utils
 
-# para actualizar: py -m pip install --upgrade pip
+#para actualizar: py -m pip install --upgrade pip
 
-# instalar: py -m ensurepip --upgrade
+#instalar: py -m ensurepip --upgrade
 
-# ejecutar el archivo py get-pip.py de https://bootstrap.pypa.io/get-pip.py
+#ejecutar el archivo py get-pip.py de https://bootstrap.pypa.io/get-pip.py
 
-# pip install virtualenv
+#pip install virtualenv
 
-# pip install pyautogui
+#pip install pyautogui
 
-# linux:python3 -m venv .venv && source .venv/bin/activate
+#linux:python3 -m venv .venv && source .venv/bin/activate
 
-# windows: py -m venv v && v\Scripts\activate.bat
+#windows: py -m venv v && v\Scripts\activate.bat
 
-# recomienda añadir al path C:\Users\Predator\AppData\Roaming\Python\Python311\Scripts
+#recomienda añadir al path C:\Users\Predator\AppData\Roaming\Python\Python311\Scripts
 
     # print('Press Ctrl-C to quit.') #saber posición del mouse
     # try:
@@ -143,27 +145,27 @@ utils
 
 # 2. listar archivos
 
-# print(os.listdir())
+#print(os.listdir())
 
-# print(os.listdir('Dataset'))
+#print(os.listdir('Dataset'))
 
-# print(list(Path().iterdir()))
+#print(list(Path().iterdir()))
 
-# print(list(Path('Dataset').iterdir()))
+#print(list(Path('Dataset').iterdir()))
 
-#3 unir paths/rutas
+# 3 unir paths/rutas
 
-# print(os.path.join(os.getcwd(), 'Dataset'))
+#print(os.path.join(os.getcwd(), 'Dataset'))
 
-# print(PurePath.joinpath(Path.cwd(), 'Dataset'))
+#print(PurePath.joinpath(Path.cwd(), 'Dataset'))
 
-#4 crear carpetas usando Python
+# 4 crear carpetas usando Python
 
-# os.mkdir('Dataset')
+#os.mkdir('Dataset')
 
-# Path('Dataset').mkdir(exist_ok=True)
+#Path('Dataset').mkdir(exist_ok=True)
 
-# os.makedirs(os.path.join('Dataset', 'Scripts'))
+#os.makedirs(os.path.join('Dataset', 'Scripts'))
 
 PurePath.joinpath(Path.cwd(), 'Dataset2', 'Scripts2').mkdir(parents=True)
 
@@ -184,86 +186,84 @@ PurePath.joinpath(Path.cwd(), 'Dataset2', 'Scripts2').mkdir(parents=True)
     #     for archivo in archivos:
     #         archivo.replace(carpeta / archivo.name)
 
+## Obtener posición del ratón en la pantalla
 
+#cord_x, cord_y = pyautogui.position()
 
-# # Obtener posición del ratón en la pantalla
+#print(str(cord_x)+";"+str(cord_y))
 
-# cord_x, cord_y = pyautogui.position()
+## Mover el ratón a otra posición
 
-# print(str(cord_x)+";"+str(cord_y))
+#pyautogui.moveTo(240, 351)
 
-# # Mover el ratón a otra posición
+## Hacer un click en la posición actual del ratón
 
-# pyautogui.moveTo(240, 351)
+#pyautogui.click()
 
-# # Hacer un click en la posición actual del ratón
+## Hacer doble click en la posición actual del ratón
 
-# pyautogui.click()
+#pyautogui.doubleClick<()
 
-# # Hacer doble click en la posición actual del ratón
+## Escribir con el teclado en la posición clickada del ratón
 
-# pyautogui.doubleClick<()
+#pyautogui.moveTo(469, 59)
 
-# # Escribir con el teclado en la posición clickada del ratón
+#pyautogui.click()
 
-# pyautogui.moveTo(469, 59)
+#pyautogui.write('Texto que se escribe', interval=0.25)
 
-# pyautogui.click()
+## Digitar caracteres especiales:
 
-# pyautogui.write('Texto que se escribe', interval=0.25)
+#pyautogui.press('esc')
 
-# # Digitar caracteres especiales:
+#pyautogui.press(['left', 'left', 'left'])
 
-# pyautogui.press('esc')
+#pyautogui.keyUp('shift')
 
-# pyautogui.press(['left', 'left', 'left'])
+#pyautogui.hotkey('ctrl','c')
 
-# pyautogui.keyUp('shift')
+## Mostrar un mensaje de alerta:
 
-# pyautogui.hotkey('ctrl','c')
+#pyautogui.alert('ALERTA')
 
-# # Mostrar un mensaje de alerta:
+## Mover el ratón presionado el click izquierdo
 
-# pyautogui.alert('ALERTA')
+#pyautogui. drag(10, 20, duration=0.3)
 
-# # Mover el ratón presionado el click izquierdo
+##10 Mover en dirección x (derecha)
 
-# pyautogui. drag(10, 20, duration=0.3)
+##20 Mover en dirección y (abajo)
 
-# # 10 Mover en dirección x (derecha)
+## Aplicación: dibujar un cuadrado en paint
 
-# # 20 Mover en dirección y (abajo)
+#pyautogui.moveTo(84,219)
 
-# # Aplicación: dibujar un cuadrado en paint
+#pyautogui.drag(200,0,duration=0.3)
 
-# pyautogui.moveTo(84,219)
+#pyautogui.drag(0,200,duration=0.3)
 
-# pyautogui.drag(200,0,duration=0.3)
+#pyautogui.drag(-200,0,duration=0.3)
 
-# pyautogui.drag(0,200,duration=0.3)
+#pyautogui.drag(0,-200,duration=0.3)
 
-# pyautogui.drag(-200,0,duration=0.3)
+## Aplicación: Dibujar un círculo (aproximado) de radio 100 en paint
 
-# pyautogui.drag(0,-200,duration=0.3)
+#pyautogui.moveTo(84, 219)
 
-# # Aplicación: Dibujar un círculo (aproximado) de radio 100 en paint
+#radio = 200
 
-# pyautogui.moveTo(84, 219)
+#diferencial = 2.5
 
-# radio = 200
+#teta = 0
 
-# diferencial = 2.5
+#while teta<math.pi:
 
-# teta = 0
+#dteta = math.asin(diferencial/(2\*radio))
 
-# while teta<math.pi:
+#dx = diferencial*math.sin(2*teta+dteta)
 
-# dteta = math.asin(diferencial/(2\*radio))
+#dy = diferencial*math.cos(2*teta+dteta)
 
-# dx = diferencial*math.sin(2*teta+dteta)
+#teta = teta+dteta
 
-# dy = diferencial*math.cos(2*teta+dteta)
-
-# teta = teta+dteta
-
-# pyautogui.drag(dx, -dy, duration=0)
+#pyautogui.drag(dx, -dy, duration=0)
